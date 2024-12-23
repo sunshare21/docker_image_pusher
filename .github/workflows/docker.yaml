@@ -45,6 +45,11 @@ jobs:
     - name: Free up disk space complete
       run: |
         echo "Free up disk space complete"
+        echo "=====================test out ==========================================="
+        echo "${{ secrets.ALIYUN_REGISTRY }}"
+        echo "${{ secrets.ALIYUN_NAME_SPACE }}"
+        echo "${{ secrets.ALIYUN_REGISTRY_USER }}"
+        echo "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}"
         echo "=============================================================================="
         df -hT
         echo "=============================================================================="
